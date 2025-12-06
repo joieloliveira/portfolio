@@ -6,27 +6,60 @@
     font-family: Gadugi Bold;
     src: url(fonts/gadugi-bold.ttf);
 }
-/*===linksTop===*/
-.linksTop{
+.buttonSlidebar{
+    display: none;
+}
+/*===navbar===*/
+.navbar{
     display: flex;
     align-items: center;
-    justify-content: center;
-    position: fixed;
-    background-color: white;
-    padding-top: 3px;
+    justify-content: center !important;
+    padding-top: 5px;
+    padding-bottom: 5px;
     left: 0;
     top: 0;
     width: 100%;
     z-index: 10;
+    transition: 0.2s;
 }
-.linksTop a{
+.navbar.stick{
+    background-color: white;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    transition: 0.5s;
+}
+.navbar.stick .header_logo{
+    width: 200px;
+    transition: 0.8s !important;
+}
+.navbar a{
     margin-left: 45px;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
     color: #000000;
     font-weight: 600;
 }
-.linksTop a:hover{
+.navbar a:nth-child(7):hover{
+    opacity: 0.6;
+    color: white;
+}
+#sidebar .slideBody .buttonloginSlidbar{
+    background-color: #FF4E1A;
+    color: white;
+    padding: 4px 28px 4px 28px;
+    border-radius: 1.4rem;
+    width: 100px;
+}
+.navbar .buttonloginLinkstop{
+    background-color: #FF4E1A;
+    color: white;
+    padding: 4px 28px 4px 28px;
+    border-radius: 1.4rem;
+}
+.navbar a:hover{
     text-decoration: none;
     color: #FF4E1A;
+    transition: 0.6s;
 }
 /*===header===*/
 .header .carouselMobile{
@@ -37,10 +70,12 @@
     align-items: center;
     justify-content: center;
     background: url(img/header_banner.png) top center;
-    margin-top: 58px;
+    background-size: 1920px 409px;
+    margin-top: 55px;
 }
 .header .carouselDesktop .carousel-item{
     text-align:center;
+    padding-top: 9px;
 }
 /*===box1234===*/
 .boxLinks .boxLogoMobile{
@@ -60,13 +95,35 @@
     width: 260px;
     height: 80px;
     margin: 10px 15px 10px 15px;
-    box-shadow: 2px 8px 4px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 10px 0px rgb(0 0 0 / 20%);
     z-index: 9;
+}
+.boxLinks .box1234 .box1234Links .box1234LinksP1{
+    color: #FF4E1A;
+    font-size: 300%;
+    font-weight: 700;
+    margin-top:4px
+}
+.boxLinks .box1234 .box1234Links .pontoQ{
+    width: 10px;
+    height: 10px;
+    background-color: #FF4E1A;
+    margin: 0 12px -20px 10px;
 }
 .boxLinks .box1234 .box1234Links .boxtxt{
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+.boxLinks .box1234 .box1234Links .boxtxt .boxtxtP1{
+    margin: 0 0 -3px 0;
+    font-weight: 700;
+    font-size: 100%;
+}
+.boxLinks .box1234 .box1234Links .boxtxt .boxtxtP2{
+    margin: -3px 0 0 0 ;
+    opacity: 0.5;
+    font-size: 90%;
 }
 /*===infoVotodoacao===*/
 .infoVotodoacao{
@@ -74,15 +131,59 @@
     align-items: center;
     justify-content: center;
     margin-top: 50px;
+    font-size: 95%;
 }
-.infoVotodoacao .Votodoacao img{
+.infoVotodoacao .icons img:hover{
+    opacity: 0.6;
+    transition: 1s;
+}
+.infoVotodoacao .Votodoacao button{
+    outline: none;
+    width: 268px; 
+    height: 235px; 
     margin-top: -40px;
     margin-left: 20px;
+    border-radius: 1.5rem;
+    border: none;
+    background-color: white;
+}
+.infoVotodoacao .Votodoacao button:hover{
+    opacity: 0.7;
+    transition: 1s;
+    cursor: pointer
+}
+.infoVotodoacao .info .infoP1{
+    margin: -11px 0 -11px 0;
+}
+.infoVotodoacao .info .infoImg{
+    margin: -3px 5px 0 0;
 }
 .infoVotodoacao .info .icons{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.infoVotodoacao .info .icons .jogadoresServidor .jogadoresServidorP1{
+    margin: -4px 0 -4px 0;
+    color: #fd3f05;
+    font-weight: 700;
+    font-size: 80%;
+}
+.infoVotodoacao .info .icons .jogadoresServidor .jogadoresServidorP2{
+    margin: -4px 0 -4px 0;
+    font-size: 140%;
+    font-weight: 800;
+}
+.infoVotodoacao .info .icons .jogadoresServidor .jogadoresServidorP3{
+    margin: -4px 0 -4px 0;
+    color: #fcb22a;
+    font-weight: 700
+}
+.infoVotodoacao .info .icons .jogadoresServidor .jogadoresServidorP4{
+    margin: -4px 0 -4px 0;
+    color: #A3D900;
+    font-size: 140%;
+    font-weight: 800;
 }
 .infoVotodoacao .info .icons .jogadoresServidor{
     display: flex;
@@ -108,19 +209,22 @@
     margin: 50px 0 0 0;
     padding-bottom: 40px;
 }
+.loja .lojaH5{
+    padding: 20px 0 15px 0;
+    font-weight: 700;
+    color: #fd3f05;
+}
 .carrosselItem{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     margin: 0 5px 0 5px;
-    background-color: #F3F3F3;
-}
-.loja .lojaSlide{
-    width: 1150px;
+    background-color: #ebe6e6;
 }
 .carrosselItem p{
     text-align: center;
+    font-size: 90%;
 }
 .carrosselItem h6{
     color: #fd3f05;
@@ -133,49 +237,71 @@
     flex-direction: column;
     padding-bottom: 40px;
 }
-.ranking .rankingBox{
+.ranking .rankingH5{
+    margin: 25px 0 30px 0;
+    color: #fd3f05;
+    font-weight: 700;
+}
+.ranking .rankingCarrosel{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.ranking .rankingBox .card{
+.ranking .rankingCarrosel .card .cardP1{
+    color: #fd3f05;
+    font-weight: 700;
+    margin-top: 5px;
+}
+.ranking .rankingCarrosel .card .cardP2{
+    color: #fd3f05;
+    font-weight: 700;
+    margin: -6px 0 5px 0
+}
+.ranking .rankingCarrosel .card{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     border-radius: 0.5rem;
-    margin: 0 26px 0 26px;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-    width: 235px;
-    height: 220px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 6px;
     overflow: hidden;
+    margin: 0 5px 0 5px;
 }
-.ranking .rankingBox .card p{
+.ranking .rankingCarrosel .card .cardBody .cardBody3Stats .cardBodyStatsImg img{
+    width: 30px;
+}
+.ranking .rankingCarrosel .card .cardBody .cardBody3Stats .cardBodyStatsTxt .cardBodyStatsTxtP1{
+    color: #fcb22a;
+    font-weight: 600;
+}
+.ranking .rankingCarrosel .card .cardBody .cardBody3Stats .cardBodyStatsTxt .cardBodyStatsTxtP2{
+    opacity: 0.6;
+}
+.ranking .rankingCarrosel .card p{
     margin: 0;
 }
-.ranking .rankingBox .card .cardBody{
+.ranking .rankingCarrosel .card .cardBody{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.ranking .rankingBox .card .cardBody .cardBody3Stats{
+.ranking .rankingCarrosel .card .cardBody .cardBody3Stats{
     display: flex;
     flex-direction: column;
     margin-left: 25px;
 }
-.ranking .rankingBox .card .cardBody .cardBodyStats{
+.ranking .rankingCarrosel .card .cardBody .cardBodyStats{
     display: flex;
     align-items: center;
 }
-.ranking .rankingBox .card .cardBody .cardBodyStats .cardBodyStatsImg{
+.ranking .rankingCarrosel .card .cardBody .cardBodyStats .cardBodyStatsImg{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.ranking .rankingBox .card .cardBody .cardBodyStats .cardBodyStatsTxt{
+.ranking .rankingCarrosel .card .cardBody .cardBodyStats .cardBodyStatsTxt{
     display: flex;
-    align-items: center;
     flex-direction: column;
+    margin-left: 5px;
 }
 /*===guerra===*/
 .guerra{
@@ -184,6 +310,10 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+.guerra h5{
+    color: white;
+    margin: 25px 0 30px 0;
 }
 .guerra .guerraBox{
     display: flex;
@@ -194,15 +324,41 @@
     display: flex;
     align-items: center;
     border-radius: 1.5rem;
-    width: 450px;
+    font-size: 90%;
+    width: 410px;
     height: 200px;
     background-color: white;
     margin-bottom: -40px;
+
 }
 .guerra .guerraBox .cardGuerra .cardGuerraInterno{
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+.guerra .guerraBox .cardGuerra .cardGuerraInterno .cardGuerraInternoP1{
+    color: #fd3f05;
+    font-weight: 500;
+    margin:100px 5px 0 0;
+}
+.guerra .guerraBox .cardGuerra .cardGuerraInterno .cardGuerraInternoP2{
+    margin-top: 100px;
+}
+.guerra .guerraBox .cardGuerra .cardGuerraInterno .cardGuerraInternoP3{
+    color: #fd3f05;
+    font-weight: 500;
+    margin-right: 5px;
+}
+.guerra .guerraBox .cardGuerra .cardGuerraInterno .cardGuerraInternoP4{
+    color: #fd3f05;
+    font-weight: 500;
+    margin-right: 5px;
+}
+.guerra .guerraBox .cardGuerra .cardGuerraInterno .cardGuerraInternoFlag{
+    margin-top: -50px;
+}
+.guerra .guerraBox .cardGuerra .cardGuerraInterno .cardGuerraInternoEmblem01{
+    margin-top: -120px;
 }
 .guerra .guerraBox .cardGuerra p{
     margin: 0;
@@ -221,6 +377,19 @@
     flex-direction: column;
     margin: 0 80px 0 80px;
 }
+.estatistica .estatisticaBox p:nth-child(2){
+    margin: 16px 0 -5px 0;
+    font-size: 80%;
+}
+.estatistica .estatisticaBox p:nth-child(3){
+    font-size: 120%;
+    font-weight: 800;
+}
+.estatistica .estatisticaBox .estatisticaBoxP1{
+    margin: -1px 0 -5px 0;
+    font-size: 80%;
+}
+
 .estatistica .estatisticaBox img{
     opacity: 0.3;
 }
@@ -241,17 +410,42 @@
     width: 15%;
     margin: 25px 20px 0 20px;
 }
+.footer .footerBox1 .footerBox1Sobre p:first-child{
+    font-weight: 800;
+    color:#fcb22a;
+}
 .footer .footerBox1 .footerBox1Raking{
     margin: 25px 20px 0 20px;
+    display: flex;
+    flex-direction: column;
 }
-.footer .footerBox1 .footerBox1Raking p{
-    margin: 0;
+.footer .footerBox1 .footerBox1Raking p:first-child{
+    font-weight: 800;
+    color:#fcb22a;
+    margin-bottom:10px;
+}
+.footer .footerBox1 .footerBox1Raking a{
+    color: white;
+    text-decoration: none;
+    margin: 3px 0 3px 0;
+}
+.footer .footerBox1 .footerBox1Raking a:hover{
+    color: #FF4E1A;
+    transition: 0.8s;
 }
 .footer .footerBox1 .footerBox1Sociais{
     margin: 25px 0 0 80px;
 }
+.footer .footerBox1 .footerBox1Sociais p:first-child{
+    font-weight: 800;
+    color:#fcb22a;
+}
 .footer .footerBox1 .footerBox1Sociais img{
     margin: 5px
+}
+.footer .footerBox1 .footerBox1Sociais img:hover{
+    opacity: 0.6;
+    transition: 0.8s;
 }
 
 .footer .footerBox2{
@@ -272,6 +466,10 @@
     justify-content: center;
     width: 44%;
 }
+.footer .footerBox2 .footerBox2Logo img:hover{
+    opacity: 0.6;
+    transition: 0.8s;
+}
 .footer .footerBox2 .footerBox2txt{
     display: flex;
     justify-content: center;
@@ -291,9 +489,325 @@
     margin-bottom: 6px;
     margin-left: 26px;
 }
+/*===tela de 1160 para baixo/ config===*/
+@media(max-width: 1160px){
+    /*===header===*/
+    .header .carouselDesktop{
+        display: none;
+    }
+    .boxLinks .box1234{
+        display: none;
+    }
+    .navbar img{
+        display: none;
+    }
+    .navbar a{
+        margin-top: 10px;
+    }
+    .header .carouselMobile{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url(img/mobile/bg_md.png) top center;
+        text-align: center;
+        margin-top: 42px;
+    }
+    .boxLinks .boxLogoMobile{
+        display: flex;
+        justify-content: center;
+        margin-top: -85px;
+    }
+    .boxLinks .boxLogoMobile img{
+        z-index: 9;
+    }
+    /*===infoVotodoacao===*/
+    .infoVotodoacao .info hr{
+        display: none;
+    }
+    .infoVotodoacao .info p{
+        display: none;
+    }
+    .infoVotodoacao .info .icons p{
+        display: flex;
+    }
+    .infoVotodoacao .info .icons a{
+        margin-right: -6px;
+    }
+    .infoVotodoacao .info .icons{
+        margin-top: 10px;
+        margin-right: -28px;
+    }
+    .infoVotodoacao{
+        flex-direction: column-reverse;
+    }
+    .navbar{
+        padding-top: 13px !important;
+        padding-bottom: 13px !important; 
+    }
+    .navbar.stick{
+        background-color: white;
+        transition: 0.5s;
+        padding-top: 2px !important;
+        padding-bottom: 2px !important; 
+    }
+}
+/*===tela de 1022 para baixo/ config===*/
+@media(max-width: 1022px){
+    .guerra{
+        background: none;
+        background-color: #F8F8F8;
 
+    }
+    .guerra h5{
+         color: #FF4E1A !important;
+    }
+    .guerra .guerraBox .chibi{
+        display: none;
+    }
+    .cardGuerra{
+        box-shadow: 1px 1px 10px 0px rgb(0 0 0 / 20%);
+        border-radius: 0.5rem !important;
+        width: 250px !important;
+        height: 240px !important;
+        justify-content: center !important;
+        margin: 25px 10px 35px 10px !important;
+    }
+    .cardGuerraInterno{
+        margin: 0 !important;
+    }
+    .estatistica{
+        display: none;
+    }
+    .footerBox1Sociais{
+        display: none;
+    }
+}
+/*===tela de 1000px para baixo/ config===*/
+@media(max-width: 1000px){
+    .footerBox1Sobre{
+        width: 35% !important;
+        margin-left: 5px !important;
+        margin-right: 5px !important;
+    }
+    .footerBox1Raking{
+        margin-left: 5px !important;
+        margin-right: 5px !important;
+    }
+    .footerBox1 img{
+        margin-left: 5px !important;
+        margin-right: 5px !important;
+    }
+}
+/*===tela de 770px para baixo/ config===*/
+@media(max-width: 770px){
+    .navbar{
+        display: none !important;
+    }
+    .header{
+        margin-top: -112px !important;
+    }
+    .buttonSlidebar{
+        display: flex;
+        justify-content: flex-end;
+        margin: 15px 15px 0 0;
+    }
+    .buttonSlidebar button{
+        z-index: 11!important;
+    }
+    /*===slideBody===*/
+    .header_logo{
+        margin: 50px 0 10px 10px;
+    }
+    #sidebar{
+        background-color: rgb(245, 169, 6);
+    }
+    .slideBody{
+        display: flex;
+        flex-direction: column;
+        padding-top: 3px;
+    }
+    .slideBody a{
+        margin: 10px 0 0 20px;
+        color: #000000;
+        font-weight: 600;
+    }
+    .slideBody a:nth-child(6):hover{
+        opacity: 0.6;
+    }
+    .sidebar .slideBody a:hover{
+        text-decoration: none;
+        color: #FF4E1A;
+        transition: 0.6s;
+    }
+}
+/*===tela de 770px para baixo/ config===*/
+@media(max-width: 720px){
+
+    .footerBox1Sobre{
+        display: none;
+    }
+    .footer .footerBox1 .footer_chibi{
+        margin-right: 10% !important; 
+        width: 25%;
+    }
+    .footer .footerBox1 .footerBox1Raking{ 
+        font-size: 90%;
+        width: 45%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .footer .footerBox1 .footerBox1Raking p{ 
+        font-size: 140%
+    }
+
+}
+/*===tela de 600px para baixo/ config===*/
+@media(max-width: 600px){
+    .header .carouselMobile .chibi{
+        width: 400px;
+    }
+    .boxLinks .boxLogoMobile{
+        margin-top: -65px;
+    }
+    .boxLinks .boxLogoMobile .logo_mobile{
+        width: 400px;
+    }
+    .infoVotodoacao .info .icons img{
+        width: 70%;
+    }
+    .infoVotodoacao .info .icons a{
+        margin-right: -16px;
+    }
+    .infoVotodoacao .info .icons{
+        margin-left: -10px !important;
+    }
+    .infoVotodoacao .info .icons .jogadoresServidor{
+        width: 30%;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    .infoVotodoacao .Votodoacao button{
+        width: 178px; 
+        height: 145px; 
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .infoVotodoacao .Votodoacao button img{
+        width: 178px; 
+        height: 145px; 
+    }
+    .ranking .card p{
+        font-size: 70%;
+    }
+    .ranking .rankingCarrosel .card .cardBody .RankingChar{
+        width: 40px !important;
+    }
+    .ranking .rankingCarrosel .card .cardBody .cardBody3Stats .cardBodyStats .cardBodyStatsImg img{
+        width: 20px !important;
+    }
+    .ranking .rankingCarrosel .card .cardBody #cardBody3Stats{
+        height: 97px !important;
+    }
+    .cardGuerra{
+        width: 200px !important;
+        height: 210px !important;
+        margin: 25px 5px 35px 5px !important;
+    } 
+    .cardGuerra .cardGuerraInterno img:nth-child(1){
+        width: 60%; 
+    }
+    .footerBox2 .footerBox2Logo{
+        display: none !important;
+    }
+    .footerBox2 .footerBox2txt{
+        display: flex;
+        width: 100% !important;
+        align-items: center;
+    }
+    .footerBox2 .footerBox2txt p{
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
+@media(max-width: 466px){
+    .footer .footerBox1 .footer_chibi{
+        width: 40%;
+        height: 40%;
+        margin-right: 5px;
+    }
+    .footer .footerBox1Raking{
+        font-size: 80%;
+        width: 60%;
+        margin-left: -25px !important;
+    }
+    .footer .footerBox1Raking p{
+        font-size: 140% !important;
+    }
+}
+@media(max-width: 424px){
+    .boxLinks .boxLogoMobile .logo_mobile{
+        width: 350px;
+    }
+    .infoVotodoacao .Votodoacao{
+        margin-left: -10px !important; 
+    }
+    .infoVotodoacao .info .icons{
+        margin-left: -24px !important;
+    }
+    .infoVotodoacao .Votodoacao button{
+        width: 168px; 
+        height: 135px; 
+    }
+    .infoVotodoacao .Votodoacao button img{
+        width: 168px; 
+        height: 135px; 
+    }
+    .infoVotodoacao .info .icons .jogadoresServidor P:nth-child(1){
+        font-size: 70%;
+    }
+    .infoVotodoacao .info .icons .jogadoresServidor P:nth-child(2){
+        font-size: 110% !important;
+    }
+    .infoVotodoacao .info .icons #jogadoresServidor P:nth-child(1){
+        font-size: 70% !important;
+    }
+    .infoVotodoacao .info .icons #jogadoresServidor P:nth-child(2){
+        font-size: 140% !important;
+    }
+    .cardGuerra{
+        width: 170px !important;
+        height: 185px !important;
+    }
+    .cardGuerra .cardGuerraInterno p{
+        font-size: 90%;
+    }
+    .guerra .guerraBox .cardGuerra .cardGuerraInterno .textoGuerra p{
+        margin: 0 !important;
+        margin-top: 0px !important;
+    }
+    .guerra .guerraBox .cardGuerra .cardGuerraInterno #textoGuerra p{
+        margin: 0 !important;
+        margin-top: 90px !important;
+    }
+    .cardGuerra .cardGuerraInterno img:nth-child(1){
+        margin: 0;
+        margin-bottom: -100px !important;
+    }
+    .cardGuerra .cardGuerraInterno img:nth-child(2){
+        margin: 0 !important;
+        margin-bottom: -10px !important
+    }
+    .guerra .guerraBox .cardGuerra .cardGuerraInterno .textoGuerra p:nth-child(2){
+        margin-left: 4px !important;
+    }
+    .footer .footerBox1Raking a{
+        font-size: 80%;
+    }
+    .footer .footerBox1Raking{
+        margin-bottom: 20px !important;
+    }
+}
 /*===slidebar config===*/
-
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 body {
     font-family: 'Poppins', sans-serif;
@@ -328,7 +842,7 @@ body {
     text-decoration: none;
 }
 #sidebar .slideBody a:hover{
-    color: #00D9D9;
+    color: #FF4E1A;
 }
 
 #sidebar.active {
@@ -340,7 +854,7 @@ body {
     height: 35px;
     line-height: 35px;
     text-align: center;
-    background: #7386D5;
+    background: #f76402;
     position: absolute;
     top: 10px;
     right: 10px;
@@ -364,6 +878,7 @@ body {
     z-index: 998;
     opacity: 0;
     transition: all 0.5s ease-in-out;
+    margin-top: -30px;
 }
 .overlay.active {
     display: block;
@@ -388,4 +903,67 @@ body {
     position: absolute;
     top: 0;
     right: 0;
+}
+/* ---------------------------------------------------
+    painelCrud modal
+----------------------------------------------------- */
+.painelCrud{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-right: 5px;
+    padding: 15px 20px;
+    background-color: rgb(255, 255, 255);
+    z-index: 2;
+}
+.painelCrud P:nth-child(1){
+    font-size: 160%;
+    font-weight: bolder;
+}
+.painelCrud P:nth-child(2){
+    font-size: 120%;
+    margin-top: -30px;
+    color: #524282;
+    font-weight: 600;
+}
+.painelCrud .inputText{
+    background-color: #F0F0F0 ;
+    color: #A1A1A1 ;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 32px;
+    border-radius: 0.5rem;
+    padding-left: 10px;
+    border-style: none;
+}
+.painelCrud .buton{
+    outline: none;
+    background-color: #f76402;
+    color: white;
+    width: 100%;
+    height: 32px;
+    font-weight: 600;
+    border-radius: 2rem;
+    margin-top: 1px;
+    margin-bottom: 10px;
+    border-style: none;
+    font-size: 120%;
+}
+.painelCrud .buton:hover{
+    background-color: #4b1403;
+    transition: 1s;
+}
+.painelCrud a{
+    color: black;
+    float: right;
+    font-size: 80%;
+    text-decoration: none !important;
+}
+.painelCrud a:hover{
+    color: #f76402;
+    transition: 0.8s;
+}
+.painelCrud P:nth-child(1){
+    color: black;
 }

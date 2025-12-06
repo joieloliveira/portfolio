@@ -7,6 +7,7 @@
     <title>Ragnarok</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
     <!-- Owl Stylesheets -->
     <link rel="stylesheet" href="assets/owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/owlcarousel/assets/owl.theme.default.min.css">
@@ -25,17 +26,64 @@
 </head>
 
 <body>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content painelCrud">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">PAINEL DE CONTROLE</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body ">
+                    </form>
+                    <input class="inputText" type="text" name="Usuário" placeholder="Usuário" />
+                    <input class="inputText" type="text" name="Senha" placeholder="Senha" />
+                    <button class="buton" type="submit">LOGIN</button>
+                    </form>
+                    <button class="buton" type="submit">REGISTRAR</button>
+                    <a href="#">ESQUECEU SUA SENHA</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <!-- sidebar -->
+    <nav id="sidebar">
+        <div class="sidebarHeader">
+            <div class="sidebar-header">
+                <img src="img/header_logo.png" class="header_logo" style="width: 170px;">
+            </div>
+            <div id="dismiss">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+        </div>
+        <div class="slideBody">
+            <a href="#">INÍCIO</a>
+            <a href="#">INFORMAÇÔES</a>
+            <a href="#">DOWNLOAD</a>
+            <a href="#">FÓRUM</a>
+            <a href="#">REGISTRAR</a>
+            <a href="#" class="buttonloginSlidbar" data-toggle="modal" data-target="#exampleModal">LOGIN</a>
+        </div>
+    </nav><!-- buttonSlidebar -->
+    <div class="buttonSlidebar">
+        <button type="button" id="sidebarCollapse" class="btn btn-dark">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+    </div>
     <!-- linksTop -->
-    <div class="linksTop">
+    <header class="navbar fixed-top">
         <img src="img/header_logo.png" class="header_logo" style="margin-right: 160px;">
         <a href="#">INÍCIO</a>
         <a href="#">INFORMAÇÔES</a>
         <a href="#">DOWNLOAD</a>
         <a href="#">FÓRUM</a>
         <a href="#">REGISTRAR</a>
-        <a href="#"
-            style="background-color: #FF4E1A; color: white; padding: 4px 28px 4px 28px; border-radius: 1.4rem;">LOGIN</a>
-    </div>
+        <a href="#" class="buttonloginLinkstop" data-toggle="modal" data-target="#exampleModal">LOGIN</a>
+    </header>
     <!-- header -->
     <div class="header">
         <!-- The slideshow desktop tablet-->
@@ -56,13 +104,13 @@
         <div id="controle" class="carouselMobile carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active carrosselSlid">
-                    <img class="chibi" src="img/slide01.png" alt="slide01">
+                    <img class="chibi" src="img/slideMobile01.png" alt="slide01">
                 </div>
                 <div class="carousel-item carrosselSlid">
-                    <img class="chibi" src="img/slide01.png" alt="slide01">
+                    <img class="chibi" src="img/slideMobile02.png" alt="slide01">
                 </div>
                 <div class="carousel-item carrosselSlid">
-                    <img class="chibi" src="img/slide01.png" alt="slide01">
+                    <img class="chibi" src="img/slideMobile03.png" alt="slide01">
                 </div>
             </div>
         </div>
@@ -71,90 +119,102 @@
     <div class="boxLinks">
         <div class="box1234">
             <div class="box1234Links">
-                <p style="color: #FF4E1A; font-size: 400%; font-weight: 800;">1
-                <div style="width: 13px; height: 13px; background-color: #FF4E1A; margin: 0 12px -23px 10px;"></div>
+                <p class="box1234LinksP1">1
+                <div class="pontoQ"></div>
                 </p>
                 <div class="boxtxt">
-                    <p style="margin: 0 0 -3px 0; font-weight: 700; font-size: 120%;">Download</p>
-                    <p style="margin: -3px 0 0 0 ; opacity: 0.5; font-size: 120%;">Baixe o jogo...</p>
+                    <p class="boxtxtP1">Download</p>
+                    <p class="boxtxtP2">Baixe o jogo...</p>
                 </div>
             </div>
             <div class="box1234Links">
-                <p style="color: #FF4E1A; font-size: 400%; font-weight: 800;">2
-                <div style="width: 13px; height: 13px; background-color: #FF4E1A; margin: 0 12px -23px 10px;"></div>
+                <p class="box1234LinksP1">2
+                <div class="pontoQ"></div>
                 </p>
                 <div class="boxtxt">
-                    <p style="margin: 0 0 -3px 0; font-weight: 700; font-size: 120%;">Registrar</p>
-                    <p style="margin: -3px 0 0 0 ; opacity: 0.5; font-size: 120%;">Crie sua Conta...</p>
+                    <p class="boxtxtP1">Registrar</p>
+                    <p class="boxtxtP2">Crie sua Conta...</p>
                 </div>
             </div>
             <div class="box1234Links">
-                <p style="color: #FF4E1A; font-size: 400%; font-weight: 800;">3
-                <div style="width: 13px; height: 13px; background-color: #FF4E1A; margin: 0 12px -23px 10px;"></div>
+                <p class="box1234LinksP1">3
+                <div class="pontoQ"></div>
                 </p>
                 <div class="boxtxt">
-                    <p style="margin: 0 0 -3px 0; font-weight: 700; font-size: 120%;">Instalação</p>
-                    <p style="margin: -3px 0 0 0 ; opacity: 0.5; font-size: 120%;">Instale o jogo...</p>
+                    <p class="boxtxtP1">Instalação</p>
+                    <p class="boxtxtP2">Instale o jogo...</p>
                 </div>
             </div>
             <div class="box1234Links">
-                <p style="color: #FF4E1A; font-size: 400%; font-weight: 800;">4
-                <div style="width: 13px; height: 13px; background-color: #FF4E1A; margin: 0 12px -23px 10px;"></div>
+                <p class="box1234LinksP1">4
+                <div class="pontoQ"></div>
                 </p>
                 <div class="boxtxt">
-                    <p style="margin: 0 0 -3px 0; font-weight: 700; font-size: 120%;">Divirta-se</p>
-                    <p style="margin: -3px 0 0 0 ; opacity: 0.5; font-size: 120%;">Bom jogo...</p>
+                    <p class="boxtxtP1">Divirta-se</p>
+                    <p class="boxtxtP2">Bom jogo...</p>
                 </div>
             </div>
         </div>
         <div class="boxLogoMobile">
-            <img src="img/mobile/logo_mobile.png" width="300" class="logo_mobile">
+            <img src="img/mobile/logo_mobile.png" width="460" class="logo_mobile">
         </div>
     </div>
     <!-- infoVotodoacao -->
     <div class="infoVotodoacao">
         <div class="info">
-            <p style="margin: -11px 0 -11px 0;"><img src="img/tag_nov.png" style="margin: -3px 5px 0 0;">lorem tas ir
-                teksta salikums, kuru izmanto poligrāfijā izmanto poligrāfijā</p>
+            <p class="infoP1">
+                <img src="img/tag_nov.png" class="infoImg">
+                lorem tas ir
+                teksta salikums, kuru izmanto poligrāfijā izmanto poligrāfijā
+            </p>
             <hr>
-            <p style="margin: -11px 0 -11px 0;"><img src="img/tag_evt.png" style="margin: -3px 5px 0 0;">lorem tas ir
-                teksta salikums, kuru izmanto poligrāfijā izmanto poligrāfijā</p>
+            <p class="infoP1">
+                <img src="img/tag_evt.png" class="infoImg">
+                lorem tas ir
+                teksta salikums, kuru izmanto poligrāfijā izmanto poligrāfijā
+            </p>
             <hr>
-            <p style="margin: -11px 0 -11px 0;"><img src="img/tag_att.png" style="margin: -3px 5px 0 0;">lorem tas ir
-                teksta salikums, kuru izmanto poligrāfijā izmanto poligrāfijā</p>
+            <p class="infoP1">
+                <img src="img/tag_att.png" class="infoImg">
+                lorem tas ir
+                teksta salikums, kuru izmanto poligrāfijā izmanto poligrāfijā
+            </p>
             <hr>
-            <p style="margin: -11px 0 -11px 0;"><img src="img/tag_nov.png" style="margin: -3px 5px 0 0;">lorem tas ir
-                teksta salikums, kuru izmanto poligrāfijā izmanto poligrāfijā</p>
+            <p class="infoP1">
+                <img src="img/tag_nov.png" class="infoImg">
+                lorem tas ir
+                teksta salikums, kuru izmanto poligrāfijā izmanto poligrāfijā
+            </p>
             <hr>
             <div class="icons">
-                <img src="img/icon_fb.png">
-                <img src="img/icon_ig.png">
-                <img src="img/icon_tw.png">
-                <img src="img/icon_dc.png">
-                <div class="jogadoresServidor">
-                    <p style="margin: -4px 0 -4px 0; color: #fd3f05; font-weight: 700;font-size: 80%;">JOGADORES</p>
-                    <p style="margin: -4px 0 -4px 0; font-size: 140%; font-weight: 800;">9999</p>
+                <a href=""><img src="img/icon_fb.png"></a>
+                <a href=""><img src="img/icon_ig.png"></a>
+                <a href=""><img src="img/icon_tw.png"></a>
+                <a href=""><img src="img/icon_dc.png"></a>
+                <div class="jogadoresServidor" id="jogadoresServidor">
+                    <p class="jogadoresServidorP1">JOGADORES</p>
+                    <p class="jogadoresServidorP2">9999</p>
                 </div>
                 <div class="jogadoresServidor">
-                    <p style="margin: -4px 0 -4px 0; color: #fcb22a; font-weight: 700">SERVIDOR</p>
-                    <p style="margin: -4px 0 -4px 0; color: #A3D900; font-size: 140%; font-weight: 800;">ONLINE</p>
+                    <p class="jogadoresServidorP3">SERVIDOR</p>
+                    <p class="jogadoresServidorP4">ONLINE</p>
                 </div>
             </div>
         </div>
         <div class="Votodoacao">
-            <img src="img/btn_vote.png" alt="btn_vote">
-            <img src="img/btn_donate.png" alt="btn_donate">
+            <button><img src="img/btn_vote.png" alt="btn_vote"></button>
+            <button><img src="img/btn_donate.png" alt="btn_donate"></button>
         </div>
     </div>
     <!-- loja -->
     <div class="loja">
-        <h5 style="padding: 20px 0 15px 0; font-weight: 700; color: #fd3f05;">LOJA</h5>
-        <div class="lojaSlide owl-carousel">
+        <h5 class="lojaH5">LOJA</h5>
+        <div class="lojaCarrosel owl-carousel owl-theme col-lg-8 col-md-10">
             <div class="carrosselItem">
                 <img src="img/Loja/visual01.bmp" alt="visual01">
                 <h6>LOREM IPSUM</h6>
                 <p>tas ir teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos.</p>
-                <strong></strong>
+                <strong>1.908 GP</strong>
             </div>
             <div class="carrosselItem">
                 <img src="img/Loja/visual02.bmp" alt="visual02">
@@ -163,76 +223,58 @@
                 <strong>1.908 GP</strong>
             </div>
             <div class="carrosselItem">
-
                 <img src="img/Loja/visual03.bmp" alt="visual03">
                 <h6>LOREM IPSUM</h6>
                 <p>tas ir teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos.</p>
                 <strong>1.908 GP</strong>
-
             </div>
             <div class="carrosselItem">
-
                 <img src="img/Loja/visual04.bmp" alt="visual04">
                 <h6>LOREM IPSUM</h6>
                 <p>tas ir teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos.</p>
                 <strong>1.908 GP</strong>
-
             </div>
             <div class="carrosselItem">
-
                 <img src="img/Loja/visual05.bmp" alt="visual05">
                 <h6>LOREM IPSUM</h6>
                 <p>tas ir teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos.</p>
                 <strong>1.908 GP</strong>
-
             </div>
             <div class="carrosselItem">
-
                 <img src="img/Loja/visual06.bmp" alt="visual06">
                 <h6>LOREM IPSUM</h6>
                 <p>tas ir teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos.</p>
                 <strong>1.908 GP</strong>
-
             </div>
             <div class="carrosselItem">
-
                 <img src="img/Loja/visual07.bmp" alt="visual07">
                 <h6>LOREM IPSUM</h6>
                 <p>tas ir teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos.</p>
                 <strong>1.908 GP</strong>
-
             </div>
             <div class="carrosselItem">
-
                 <img src="img/Loja/visual08.bmp" alt="visual08">
                 <h6>LOREM IPSUM</h6>
                 <p>tas ir teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos.</p>
                 <strong>1.908 GP</strong>
-
             </div>
             <div class="carrosselItem">
-
                 <img src="img/Loja/visual09.bmp" alt="visual09">
                 <h6>LOREM IPSUM</h6>
                 <p>tas ir teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos.</p>
                 <strong>1.908 GP</strong>
-
             </div>
             <div class="carrosselItem">
-
                 <img src="img/Loja/visual010.bmp" alt="visual10">
                 <h6>LOREM IPSUM</h6>
                 <p>tas ir teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos.</p>
                 <strong>1.908 GP</strong>
-
             </div>
             <div class="carrosselItem">
-
                 <img src="img/Loja/visual011.bmp" alt="visual11">
                 <h6>LOREM IPSUM</h6>
                 <p>tas ir teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos.</p>
                 <strong>1.908 GP</strong>
-
             </div>
             <div class="carrosselItem">
                 <img src="img/Loja/visual012.bmp" alt="visual12">
@@ -244,167 +286,165 @@
     </div>
     <!-- ranking -->
     <div class="ranking">
-        <h5 style="margin: 25px 0 30px 0; color: #fd3f05; font-weight: 700;">RANKINGS</h5>
-        <div class="rankingBox" id="rankingDesktop">
+        <h5 class="rankingH5">RANKINGS</h5>
+        <div class="rankingCarrosel owl-carousel owl-theme col-lg-8 col-md-10">
             <div class="card">
-                <p style="color: #fd3f05; font-weight: 700; margin-top: -25px;">GUERRA DO EMPERIUM</p>
-                <p style="color: #fd3f05; font-weight: 700; margin: -6px 0 5px 0">(WOE)</p>
+                <p class="cardP1">GUERRA DO EMPERIUM</p>
+                <p class="cardP2">(WOE)</p>
                 <div class="cardBody">
-                    <img src="img/Rankings/char.png" alt="char">
+                    <img class="RankingChar" src="img/Rankings/char.png" alt="char">
                     <div class="cardBody3Stats">
                         <div class="cardBodyStats">
                             <div class="cardBodyStatsImg">
-                                <img src="img/Rankings/helmet.png" width="30" alt="helmet">
+                                <img src="img/Rankings/helmet.png" alt="helmet">
                             </div>
                             <div class="cardBodyStatsTxt">
-                                <p style="color: #fcb22a; font-weight: 600;">Nome:</p>
-                                <p style="opacity: 0.6;">Lorem</p>
+                                <p class="cardBodyStatsTxtP1">Nome:</p>
+                                <p class="cardBodyStatsTxtP2">Lorem</p>
                             </div>
                         </div>
                         <div class="cardBodyStats">
                             <div class="cardBodyStatsImg">
-                                <img src="img/Rankings/swords.png" width="30" alt="swords">
+                                <img src="img/Rankings/swords.png" alt="swords">
                             </div>
                             <div class="cardBodyStatsTxt">
-                                <p style="color: #fcb22a; font-weight: 600;">Eliminação:</p>
-                                <p style="opacity: 0.6;">256</p>
+                                <p class="cardBodyStatsTxtP1">Eliminação:</p>
+                                <p class="cardBodyStatsTxtP2">256</p>
                             </div>
                         </div>
                         <div class="cardBodyStats">
                             <div class="cardBodyStatsImg">
-                                <img src="img/Rankings/skeleton.png" width="30" alt="skeleton">
+                                <img src="img/Rankings/skeleton.png" alt="skeleton">
                             </div>
                             <div class="cardBodyStatsTxt">
-                                <p style="color: #fcb22a; font-weight: 600;">Mortes:</p>
-                                <p style="opacity: 0.6;">10</p>
+                                <p class="cardBodyStatsTxtP1">Mortes:</p>
+                                <p class="cardBodyStatsTxtP2">10</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="card">
-                <p style="color: #fd3f05; font-weight: 700; margin-top: -25px;">JOGADOR VS JOGADOR</p>
-                <p style="color: #fd3f05; font-weight: 700; margin: -6px 0 5px 0">(WOE)</p>
+                <p class="cardP1">JOGADOR VS JOGADOR</p>
+                <p class="cardP2">(WOE)</p>
                 <div class="cardBody">
-                    <img src="img/Rankings/char.png" alt="char">
+                    <img class="RankingChar" src="img/Rankings/char.png" alt="char">
                     <div class="cardBody3Stats">
                         <div class="cardBodyStats">
                             <div class="cardBodyStatsImg">
-                                <img src="img/Rankings/helmet.png" width="30" alt="helmet">
+                                <img src="img/Rankings/helmet.png" alt="helmet">
                             </div>
                             <div class="cardBodyStatsTxt">
-                                <p style="color: #fcb22a; font-weight: 600;">Nome:</p>
-                                <p style="opacity: 0.6;">Lorem</p>
+                                <p class="cardBodyStatsTxtP1">Nome:</p>
+                                <p class="cardBodyStatsTxtP2">Lorem</p>
                             </div>
                         </div>
                         <div class="cardBodyStats">
                             <div class="cardBodyStatsImg">
-                                <img src="img/Rankings/swords.png" width="30" alt="swords">
+                                <img src="img/Rankings/swords.png" alt="swords">
                             </div>
                             <div class="cardBodyStatsTxt">
-                                <p style="color: #fcb22a; font-weight: 600;">Eliminação:</p>
-                                <p style="opacity: 0.6;">256</p>
+                                <p class="cardBodyStatsTxtP1">Eliminação:</p>
+                                <p class="cardBodyStatsTxtP2">256</p>
                             </div>
                         </div>
                         <div class="cardBodyStats">
                             <div class="cardBodyStatsImg">
-                                <img src="img/Rankings/skeleton.png" width="30" alt="skeleton">
+                                <img src="img/Rankings/skeleton.png" alt="skeleton">
                             </div>
                             <div class="cardBodyStatsTxt">
-                                <p style="color: #fcb22a; font-weight: 600;">Mortes:</p>
-                                <p style="opacity: 0.6;">10</p>
+                                <p class="cardBodyStatsTxtP1">Mortes:</p>
+                                <p class="cardBodyStatsTxtP2">10</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="card">
-                <p style="color: #fd3f05; font-weight: 700; margin-top: -25px;">BATALHA CAMPAL</p>
-                <p style="color: #fd3f05; font-weight: 700; margin: -6px 0 5px 0">(WOE)</p>
+                <p class="cardP1">BATALHA CAMPAL</p>
+                <p class="cardP2">(WOE)</p>
                 <div class="cardBody">
-                    <img src="img/Rankings/char.png" alt="char">
+                    <img class="RankingChar" src="img/Rankings/char.png" alt="char">
                     <div class="cardBody3Stats">
                         <div class="cardBodyStats">
                             <div class="cardBodyStatsImg">
-                                <img src="img/Rankings/helmet.png" width="30" alt="helmet">
+                                <img src="img/Rankings/helmet.png" alt="helmet">
                             </div>
                             <div class="cardBodyStatsTxt">
-                                <p style="color: #fcb22a; font-weight: 600;">Nome:</p>
-                                <p style="opacity: 0.6;">Lorem</p>
+                                <p class="cardBodyStatsTxtP1">Nome:</p>
+                                <p class="cardBodyStatsTxtP2">Lorem</p>
                             </div>
                         </div>
                         <div class="cardBodyStats">
                             <div class="cardBodyStatsImg">
-                                <img src="img/Rankings/swords.png" width="30" alt="swords">
+                                <img src="img/Rankings/swords.png" alt="swords">
                             </div>
                             <div class="cardBodyStatsTxt">
-                                <p style="color: #fcb22a; font-weight: 600;">Eliminação:</p>
-                                <p style="opacity: 0.6;">256</p>
+                                <p class="cardBodyStatsTxtP1">Eliminação:</p>
+                                <p class="cardBodyStatsTxtP2">256</p>
                             </div>
                         </div>
                         <div class="cardBodyStats">
                             <div class="cardBodyStatsImg">
-                                <img src="img/Rankings/skeleton.png" width="30" alt="skeleton">
+                                <img src="img/Rankings/skeleton.png" alt="skeleton">
                             </div>
                             <div class="cardBodyStatsTxt">
-                                <p style="color: #fcb22a; font-weight: 600;">Mortes:</p>
-                                <p style="opacity: 0.6;">10</p>
+                                <p class="cardBodyStatsTxtP1">Mortes:</p>
+                                <p class="cardBodyStatsTxtP2">10</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="card">
-                <p style="color: #fd3f05; font-weight: 700; margin-top: -25px;">MONSTRO VS JOGADOR</p>
-                <p style="color: #fd3f05; font-weight: 700; margin: -6px 0 5px 0">(WOE)</p>
+                <p class="cardP1">MONSTRO VS JOGADOR</p>
+                <p class="cardP2">(WOE)</p>
                 <div class="cardBody">
-                    <img src="img/Rankings/char.png" alt="char">
-                    <div class="cardBody3Stats" style="height: 140px;">
+                    <img class="RankingChar" src="img/Rankings/char.png" alt="char">
+                    <div class="cardBody3Stats" style="height: 145px;" id="cardBody3Stats">
                         <div class="cardBodyStats">
                             <div class="cardBodyStatsImg">
-                                <img src="img/Rankings/helmet.png" width="30" alt="helmet">
+                                <img src="img/Rankings/helmet.png" alt="helmet">
                             </div>
                             <div class="cardBodyStatsTxt">
-                                <p style="color: #fcb22a; font-weight: 600;">Nome:</p>
-                                <p style="opacity: 0.6;">Lorem</p>
+                                <p class="cardBodyStatsTxtP1">Nome:</p>
+                                <p class="cardBodyStatsTxtP2">Lorem</p>
                             </div>
                         </div>
                         <div class="cardBodyStats">
                             <div class="cardBodyStatsImg">
-                                <img src="img/Rankings/skull.png" width="30" alt="swords">
+                                <img src="img/Rankings/skull.png" alt="swords">
                             </div>
                             <div class="cardBodyStatsTxt">
-                                <p style="color: #fcb22a; font-weight: 600;">Eliminação:</p>
-                                <p style="opacity: 0.6;">256</p>
+                                <p class="cardBodyStatsTxtP1">Eliminação:</p>
+                                <p class="cardBodyStatsTxtP2">256</p>
                             </div>
                         </div>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="ranking" id="rankingMobile">
 
+                    </div>
+                </div>
+            </div>
         </div>
+
     </div>
     <!-- guerra -->
     <div class="guerra">
-        <h5 style="color: white; margin: 25px 0 30px 0;">GUERRA DO EMPERIUM</h5>
+        <h5>GUERRA DO EMPERIUM</h5>
         <div class="guerraBox">
             <div class="cardGuerra" style="margin-right: -100px;">
                 <div class="cardGuerraInterno" style="margin-left: 80px;">
-                    <img src="img/flag.png" alt="flag" style="margin-top: -50px;">
-                    <img src="img/emblem01.png" alt="emblem01" style="margin-top: -120px;">
-                    <div style="display: flex;">
-                        <p style="color: #fd3f05;font-weight: 500; margin:100px 5px 0 0;">CASTELO:</p>
-                        <p style="margin-top: 100px;">Kharinc</p>
+                    <img src="img/flag.png" alt="flag" class="cardGuerraInternoFlag">
+                    <img src="img/emblem01.png" alt="emblem01" class="cardGuerraInternoEmblem01">
+                    <div style="display: flex;" class="textoGuerra" id="textoGuerra">
+                        <p class="cardGuerraInternoP1">CASTELO:</p>
+                        <p class="cardGuerraInternoP2">Kharinc</p>
                     </div>
-                    <div style="display: flex;">
-                        <p style="color: #fd3f05;font-weight: 500;margin-right: 5px;">DIA:</p>
+                    <div style="display: flex;" class="textoGuerra">
+                        <p class="cardGuerraInternoP3">DIA:</p>
                         <p>Quarta-Feira</p>
                     </div>
-                    <div style="display: flex;">
-                        <p style="color: #fd3f05;font-weight: 500;margin-right: 5px;">HORÁRIO:</p>
+                    <div style="display: flex;" class="textoGuerra">
+                        <p  class="cardGuerraInternoP4">HORÁRIO:</p>
                         <p>00:00 - 00:00 H</p>
                     </div>
                 </div>
@@ -412,18 +452,18 @@
             <img src="img/chibi.png" class="chibi" style="z-index: 9;">
             <div class="cardGuerra" style="margin-left: -100px; justify-content: flex-end;">
                 <div class="cardGuerraInterno" style="margin-right: 80px;">
-                    <img src="img/flag.png" alt="flag" style="margin-top: -50px;">
-                    <img src="img/emblem01.png" alt="emblem01" style="margin-top: -120px;">
-                    <div style="display: flex;">
-                        <p style="color: #fd3f05;font-weight: 500; margin:100px 5px 0 0;">CASTELO:</p>
-                        <p style="margin-top: 100px;">Kharinc</p>
+                    <img src="img/flag.png" alt="flag" class="cardGuerraInternoFlag">
+                    <img src="img/emblem01.png" alt="emblem01" class="cardGuerraInternoEmblem01">
+                    <div style="display: flex;" class="textoGuerra" id="textoGuerra">
+                        <p class="cardGuerraInternoP1">CASTELO:</p>
+                        <p class="cardGuerraInternoP2">Kharinc</p>
                     </div>
-                    <div style="display: flex;">
-                        <p style="color: #fd3f05;font-weight: 500;margin-right: 5px;">DIA:</p>
+                    <div style="display: flex;" class="textoGuerra">
+                        <p class="cardGuerraInternoP3">DIA:</p>
                         <p>Quarta-Feira</p>
                     </div>
-                    <div style="display: flex;">
-                        <p style="color: #fd3f05;font-weight: 500;margin-right: 5px;">HORÁRIO:</p>
+                    <div style="display: flex;" class="textoGuerra">
+                        <p  class="cardGuerraInternoP4">HORÁRIO:</p>
                         <p>00:00 - 00:00 H</p>
                     </div>
                 </div>
@@ -434,23 +474,23 @@
     <div class="estatistica">
         <div class="estatisticaBox">
             <img src="img/Icons/networking.png" width="30" alt="networking">
-            <p style="margin: 20px 0 -8px 0;font-size: 80%;">CONTAS CRIADAS</p>
-            <p style="font-size: 120%;font-weight: 800;">37</p>
+            <p>CONTAS CRIADAS</p>
+            <p>37</p>
         </div>
         <div class="estatisticaBox">
-            <img src="img/Icons/users-group-symbol-for-add.png" width="30" alt="users-group">
-            <p style="margin: 20px 0 -8px 0;font-size: 80%;">PICO DE JOGADORES</p>
-            <p style="font-size: 120%;font-weight: 800;">28</p>
+            <img src="img/Icons/users-group-symbol-for-add.png" width="48" alt="users-group">
+            <p class="estatisticaBoxP1">PICO DE JOGADORES</p>
+            <p>28</p>
         </div>
         <div class="estatisticaBox">
             <img src="img/Icons/add-user-symbol-of-interface.png" width="30" alt="interface">
-            <p style="margin: 20px 0 -8px 0;font-size: 80%;">PERSONAGENS CRIADOS</p>
-            <p style="font-size: 120%;font-weight: 800;">52</p>
+            <p>PERSONAGENS CRIADOS</p>
+            <p>52</p>
         </div>
         <div class="estatisticaBox">
             <img src="img/Icons/medieval-tower.png" width="30" alt="networking">
-            <p style="margin: 20px 0 -8px 0;font-size: 80%;">GUILDAS CRIADAS</p>
-            <p style="font-size: 120%;font-weight: 800;">4</p>
+            <p>GUILDAS CRIADAS</p>
+            <p>4</p>
         </div>
     </div>
     <!-- footerBox -->
@@ -458,30 +498,31 @@
         <div class="footerBox1">
             <img src="img/footer_chibi.png" class="footer_chibi">
             <div class="footerBox1Sobre">
-                <p style="font-weight: 800;color:#fcb22a;">Sobre nós</p>
+                <p>Sobre nós</p>
                 <p>tas ir teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par
                     vispārpieņemtu teksta aizvietotāju kopš 16. gadsimta sākuma.</p>
             </div>
             <div class="footerBox1Raking">
-                <p style="font-weight: 800;color:#fcb22a;margin-bottom:10px;">Rankings</p>
-                <p>-Lorem ipsum teksta salikums</p>
-                <p>-Lorem ipsum teksta salikums</p>
-                <p>-Lorem ipsum teksta salikums</p>
-                <p>-Lorem ipsum teksta salikums</p>
-                <p>-Lorem ipsum teksta salikums</p>
-                <p>-Lorem ipsum teksta salikums</p>
+                <p>Rankings</p>
+                <a href="">-Lorem ipsum teksta salikums</a>
+                <a href="">-Lorem ipsum teksta salikums</a>
+                <a href="">-Lorem ipsum teksta salikums</a>
+                <a href="">-Lorem ipsum teksta salikums</a>
+                <a href="">-Lorem ipsum teksta salikums</a>
+                <a href="">-Lorem ipsum teksta salikums</a>
             </div>
             <div class="footerBox1Sociais">
-                <p style="font-weight: 800;color:#fcb22a;">Redes Sociais</p>
-                <img src="img/icon_fb.png" class="icon_fb">
-                <img src="img/icon_ig.png" class="icon_ig">
-                <img src="img/icon_tw.png" class="icon_tw">
-                <img src="img/icon_dc.png" class="icon_dc">
+                <p>Redes Sociais</p>
+                <a href=""><img src="img/icon_fb.png" class="icon_fb"></a>
+                <a href=""><img src="img/icon_ig.png" class="icon_ig"></a>
+                <a href=""><img src="img/icon_tw.png" class="icon_tw"></a>
+                <a href=""><img src="img/icon_dc.png" class="icon_dc"></a>
             </div>
         </div>
         <div class="footerBox2">
             <div class="footerBox2Logo">
-                <img src="img/footer_rbs.png" class="footer_rbs">
+                <a href=""><img src="img/footer_rbs.png" class="footer_rbs"></a>
+
             </div>
             <div class="footerBox2txt">
                 <p>Copyright © 2020</p>
@@ -490,18 +531,73 @@
             </div>
         </div>
     </div>
-    <!-- carousel owl -->
+    <!-- carousel owl rankingCarrosel-->
+    <!-- carousel owl lojaCarrosel-->
     <script>
-        $(document).ready(function () {
-            var owl = $('.lojaSlide');
-            owl.owlCarousel({
-                items: 6,
-                loop: true,
-                margin: 0,
-                autoplay: true,
-                autoplayTimeout: 3000,
-                autoplayHoverPause: true
-            });
+        $('.rankingCarrosel').owlCarousel({
+            responsiveClass: true,
+            responsive: {
+                250: {
+                    items: 2,
+                    nav: false,
+                },
+                375: {
+                    items: 2,
+                    margin: 10,
+                    autoplay: true,
+                    autoplayTimeout: 3000,
+                    autoplayHoverPause: true,
+                    loop: true,
+                    nav: false,
+                },
+                1160: {
+                    items: 3,
+                    margin: 0,
+                    autoplay: true,
+                    autoplayTimeout: 3000,
+                    autoplayHoverPause: true,
+                    loop: true,
+                    nav: false,
+                },
+                1611: {
+                    items: 4,
+                    margin: 30,
+                    nav: false,
+                },
+            }
+        });
+        $('.lojaCarrosel').owlCarousel({
+            loop: true,
+            margin: 0,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true,
+            responsiveClass: true,
+            responsive: {
+                250: {
+                    items: 2,
+                    nav: false,
+                },
+                375: {
+                    items: 2,
+                    nav: false,
+                },
+                768: {
+                    items: 3,
+                    nav: false,
+                },
+                1160: {
+                    items: 6,
+                    nav: false,
+                },
+            }
+        })
+    </script>
+    <!-- scroll efect on header -->
+    <script>
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("stick", window.scrollY > 0);
         })
     </script>
     <!-- slidebar script -->
