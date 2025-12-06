@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ragnarok</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/owlcarousel/assets/owl.theme.default.min.css">
+    <!-- TimeLine https://squarechip.github.io/timeline/#horizontal-demo -->
+    <link href="https://squarechip.github.io/timeline/css/timeline.min.css" rel="stylesheet" />
+    <!-- javascript -->
+    <script src="assets/vendors/jquery.min.js"></script>
+    <script src="assets/owlcarousel/owl.carousel.js"></script>
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <!-- sidebar -->
+    <nav id="sidebar">
+        <div class="slideBody">
+            <a href="#">HOME</a>
+            <a href="#">PAGINA1</a>
+            <a href="#">PAGINA2</a>
+            <a href="#">PAGINA3</a>
+            <a href="#">PAGINA4</a>
+        </div>
+    </nav>
+    <!-- Header Bar -->
+    <header class="headerBar fixed-top">
+        <div class="headerBarBox">
+            <div class="btn-group" role="group">
+                <button id="btnGroupDrop1" type="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    Menu 01 <img src="./img/icone/arrow_down2.png" alt="arrow">
+                </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1" id="dropdownMenu">
+                    <a href="#">Exemplo 01</a>
+                    <hr>
+                    <a href="#">Exemplo 02</a>
+                    <hr>
+                    <a href="#">Exemplo 03</a>
+                </div>
+            </div>
+            <div class="btn-group" role="group">
+                <a href="#"><button id="btnGroupDrop1" type="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Menu 02
+                    </button></a>
+            </div>
+            <div class="btn-group" role="group">
+                <button id="btnGroupDrop1" type="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    Menu 03<img src="./img/icone/arrow_down2.png" alt="arrow">
+                </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1" id="dropdownMenu">
+                    <a href="#">Exemplo 01</a>
+                    <hr>
+                    <a href="#">Exemplo 02</a>
+                    <hr>
+                    <a href="#">Exemplo 03</a>
+                </div>
+            </div>
+            <img class="header_logo" src="./img/logo-ragnafun.png" alt="arrow">
+            <div class="btn-group" role="group">
+                <button id="btnGroupDrop1" type="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    Menu 04 <img src="./img/icone/arrow_down2.png" alt="arrow">
+                </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1" id="dropdownMenu">
+                    <a href="#">Exemplo 01</a>
+                    <hr>
+                    <a href="#">Exemplo 02</a>
+                    <hr>
+                    <a href="#">Exemplo 03</a>
+                </div>
+            </div>
+            <div class="btn-group" role="group">
+                <div class="btn-group" role="group">
+                    <a href="#"><button id="btnGroupDrop1" type="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Menu 02
+                        </button></a>
+                </div>
+            </div>
+            <div class="btn-group" role="group">
+                <button id="btnGroupDrop1" type="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    Menu 06 <img src="./img/icone/arrow_down2.png" alt="arrow">
+                </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1" id="dropdownMenu">
+                    <a href="#">Exemplo 01</a>
+                    <hr>
+                    <a href="#">Exemplo 02</a>
+                    <hr>
+                    <a href="#">Exemplo 03</a>
+                </div>
+            </div>
+        </div>
+        <!-- buttonSlidebar -->
+        <button class="btnGroupDrop2" type="button" id="sidebarCollapse" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+    </header>
+    <!-- serverInformation status -->
+    <div class="serverInformation">
+        <div class="boxText">
+            <span>SERVER INFORMATION</span>
+        </div>
+        <marquee class="marquee">
+            <div class="marqueeBox">
+                <p><span>LOREM IPSUM DOLOR SIT AMET: </span>LOREM IPSUM DOLOR SIT</p>
+                <p><span>LOREM IPSUM DOLOR: </span>LOREM IPSUM DOLOR</p>
+                <p><span>LOREM IPSUM: </span>LOREM IPSUM DOLOR SIT AMET</p>
+            </div>
+        </marquee>
+        <div class="status">
+            <div class="statusBox">
+                <p>JOGADORES ONLINE</p>
+                <span>460</span>
+            </div>
+            <div class="statusBox">
+                <p>PICO DE JOGADORES</p>
+                <span>176</span>
+            </div>
+            <div class="statusBox">
+                <p>STATUS SERVER</p>
+                <span>ON</span>
+            </div>
+        </div>
+    </div>
+    <div class="serverInformationMobile">
+        <div class="statusMobile">
+            <div class="statusBoxMobile">
+                <p>JOGADORES ONLINE</p>
+                <span>460</span>
+            </div>
+            <div class="statusBoxMobile">
+                <p>PICO DE JOGADORES</p>
+                <span>176</span>
+            </div>
+            <div class="statusBoxMobile">
+                <p>STATUS SERVER</p>
+                <span>ON</span>
+            </div>
+        </div>
+    </div>
+    <!-- Header BackGround -->
+    <div class="headerBackGround">
+        <div class="boxHeaderBackGround">
+            <span>DIVIRTA-SE POR RUNE MIDGARD!!!!</span>
+            <p>
+                O melhor servidor de Ragnarok Online em 2023 está online, convide seus amigos e venha
+                se aventurar por esse incrível mundo de Rune-Midgard, novos sistemas e desafios para
+                uma nova experiência e imersão.
+            </p>
+            <div class="btn">
+                <a href="#"><button class="download">Download</button></a>
+                <a href="#"><button class="wiki">Wiki</button></a>
+            </div>
+            <a href="#"><button class="discord">Discord</button></a>
+        </div>
+    </div>
+    <!-- Destaque body-->
+    <div class="destaqueBG">
+        <span>DESTAQUE DO SERVIDOR</span>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis elit id nisi ullamcorper fringilla. Nam
+            ornare congue convallis. Phasellus tempus ante quis neque placerat, eu vestibulum ligula efficitur. Praesent
+            sed laoreet risus, id vulputate felis.
+        </p>
+        <div class="destaque6Box">
+            <div class="destaqueBox">
+                <img src="./img/4_STAR_RAINBOW_BOX 5.png" alt="4_STAR_RAINBOW_BOX 5.png">
+                <div class="destaqueBoxTxt">
+                    <span>Monstros Shiny</span>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis elit id nisi ullamcorper
+                        fringilla. Nam ornare congue convallis. Phasellus tempus ante quis neque placerat, eu vestibulum
+                        ligula efficitur.
+                    </p>
+                </div>
+            </div>
+            <div class="destaqueBox">
+                <img src="./img/4_STAR_RAINBOW_BOX 6.png" alt="4_STAR_RAINBOW_BOX 6.png">
+                <div class="destaqueBoxTxt">
+                    <span>Procure por Chapéis</span>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis elit id nisi ullamcorper
+                        fringilla. Nam ornare congue convallis.
+                    </p>
+                </div>
+            </div>
+            <div class="destaqueBox">
+                <img src="./img/4_STAR_RAINBOW_BOX 7.png" alt="4_STAR_RAINBOW_BOX 7.png">
+                <div class="destaqueBoxTxt">
+                    <span>Sistema de Mineração</span>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis elit id nisi ullamcorper
+                        fringilla. Nam ornare congue convallis. Phasellus tempus ante .
+                    </p>
+                </div>
+            </div>
+            <div class="destaqueBox">
+                <img src="./img/4_STAR_RAINBOW_BOX 4.png" alt="4_STAR_RAINBOW_BOX 4.png">
+                <div class="destaqueBoxTxt">
+                    <span>Sistema de Pesca</span>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis elit id nisi ullamcorper
+                        fringilla. Nam ornare congue convallis. Phasellus tempus ante quis neque placerat.
+                    </p>
+                </div>
+            </div>
+            <div class="destaqueBox">
+                <img src="./img/4_STAR_RAINBOW_BOX 2.png" alt="4_STAR_RAINBOW_BOX 2.png">
+                <div class="destaqueBoxTxt">
+                    <span>Instancias e Calabouços Personalizados</span>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis elit id nisi ullamcorper
+                        fringilla. Nam ornare congue convallis.
+                    </p>
+                </div>
+            </div>
+            <div class="destaqueBox">
+                <img src="./img/4_STAR_RAINBOW_BOX 1.png" alt="4_STAR_RAINBOW_BOX 1.png">
+                <div class="destaqueBoxTxt">
+                    <span>Baús Encantados Aleatórios</span>
+                    <p>
+                        Nam ornare congue convallis. Phasellus tempus ante quis neque placerat, eu vestibulum ligula
+                        efficitur.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="destaqueBtn"><a href="#"><button class="wiki">Wiki</button></a></div>
+        <span>ESTATÍSTICAS DO SERVIDOR</span>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis elit id nisi ullamcorper fringilla. Nam
+            ornare congue convallis. Phasellus tempus ante quis neque placerat, eu vestibulum ligula efficitur. Praesent
+            sed laoreet risus, id vulputate felis.
+        </p>
+    </div>
+    <!-- estatisticas -->
+    <div class="estatisticasBG">
+        <div class="estatisticasBox">
+            <div class="box">
+                <img src="./img/scroll 1.png" alt="scroll 1.png">
+                <span>EPISÓDIO</span>
+                <p>Encontro com o Desconhecido</p>
+            </div>
+            <div class="box">
+                <img src="./img/level-up 1.png" alt="level-up 1.png">
+                <span>RATES</span>
+                <p>30x / 30x / 30x</p>
+            </div>
+            <div class="box">
+                <img src="./img/dungeon 1.png" alt="dungeon 1.png">
+                <span>SISTEMAS</span>
+                <p>Diversos sistemas exclusivos.</p>
+            </div>
+            <div class="box">
+                <img src="./img/jogo-de-rpg 1.png" alt="jogo-de-rpg 1.png">
+                <span>PROTEÇÃO</span>
+                <p>Gepard & Anti-DDoS</p>
+            </div>
+        </div>
+    </div>
+    <!-- Flags war of emperium -->
+    <div class="warEmperiumBG">
+        <div class="box">
+            <img src="./img/Rectangle 1938.png" alt="Rectangle 1938.png" id="retanguloRosa">
+            <img src="./img/flag-01.png" alt="flag-01.png">
+            <div class="txt">
+                <span>RAGNAROK BRASIL</span>
+                <p>Kriemhild</p>
+            </div>
+        </div>
+        <img src="./img/chibi-woe.png" alt="chibi-woe.png">
+        <div class="box">
+            <img src="./img/Rectangle 1938.png" alt="Rectangle 1938.png" id="retanguloRosa">
+            <img src="./img/flag-01.png" alt="flag-01.png">
+            <div class="txt">
+                <span>RAGNAROK BRASIL</span>
+                <p>Kriemhild</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- timeLine -->
+    <div class="timelineBG">
+        <span>ROTEIRO DE EVOLUÇÃO</span>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis elit id nisi ullamcorper fringilla. Nam
+            ornare congue convallis. Phasellus tempus ante quis neque placerat, eu vestibulum ligula efficitur. Praesent
+            sed laoreet risus, id vulputate felis.</p>
+        <div class="timelinebox">
+            <div class="timeline timeline--loaded timeline--horizontal" id="timeline-horizontal" style="opacity: 1;">
+                <div class="timeline__wrap">
+                    <div class="timeline__items"
+                        style="width: 1640px; height: 670px; transform: translate3d(0px, 0px, 0px);">
+                        <div class="timeline__item timeline__item--top" style="width: 205px; height: 335px;">
+                            <div class="timeline__item__inner">
+                                <div class="timeline__content__wrap">
+                                    <div class="timeline__content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis elit id
+                                            nisi ullamcorper
+                                            fringilla. Nam ornare congue convallis. Phasellus tempus ante quis neque
+                                            placerat, eu
+                                            vestibulum
+                                            ligula.
+                                        </p>
+                                        <img src="./img/4_STAR_RAINBOW_BOX 1 (1).png" alt="4_STAR_RAINBOW_BOX 1 (1).png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline__item timeline__item--bottom"
+                            style="width: 205px; height: 335px; transform: translateY(335px);">
+                            <div class="timeline__item__inner">
+                                <div class="timeline__content__wrap">
+                                    <div class="timeline__content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis elit id
+                                            nisi ullamcorper
+                                            fringilla. Nam ornare congue convallis. Phasellus tempus ante quis neque
+                                            placerat, eu
+                                            vestibulum
+                                            ligula.
+                                        </p>
+                                        <img src="./img/4_M_EINMINER 1.png" alt="4_M_EINMINER 1.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline__item timeline__item--top" style="width: 205px; height: 335px;">
+                            <div class="timeline__item__inner">
+                                <div class="timeline__content__wrap">
+                                    <div class="timeline__content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis elit id
+                                            nisi ullamcorper
+                                            fringilla. Nam ornare congue convallis. Phasellus tempus ante quis neque
+                                            placerat, eu
+                                            vestibulum
+                                            ligula.
+                                        </p>
+                                        <img src="./img/EP19_UNFROST_FLOWER 1.png" alt="EP19_UNFROST_FLOWER 1.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline__item timeline__item--bottom"
+                            style="width: 205px; height: 335px; transform: translateY(335px);">
+                            <div class="timeline__item__inner">
+                                <div class="timeline__content__wrap">
+                                    <div class="timeline__content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis elit id
+                                            nisi ullamcorper
+                                            fringilla. Nam ornare congue convallis. Phasellus tempus ante quis neque
+                                            placerat, eu
+                                            vestibulum
+                                            ligula.
+                                        </p>
+                                        <img src="./img/4_STAR_RAINBOW_BOX 1 (1).png" alt="4_STAR_RAINBOW_BOX 1 (1).png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline__item timeline__item--top" style="width: 205px; height: 335px;">
+                            <div class="timeline__item__inner">
+                                <div class="timeline__content__wrap">
+                                    <div class="timeline__content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis elit id
+                                            nisi ullamcorper
+                                            fringilla. Nam ornare congue convallis. Phasellus tempus ante quis neque
+                                            placerat, eu
+                                            vestibulum
+                                            ligula.
+                                        </p>
+                                        <img src="./img/4_M_EINMINER 1.png" alt="4_M_EINMINER 1.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline__item timeline__item--bottom"
+                            style="width: 205px; height: 335px; transform: translateY(335px);">
+                            <div class="timeline__item__inner">
+                                <div class="timeline__content__wrap">
+                                    <div class="timeline__content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis elit id
+                                            nisi ullamcorper
+                                            fringilla. Nam ornare congue convallis. Phasellus tempus ante quis neque
+                                            placerat, eu
+                                            vestibulum
+                                            ligula.
+                                        </p>
+                                        <img src="./img/EP19_UNFROST_FLOWER 1.png" alt="EP19_UNFROST_FLOWER 1.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline__item timeline__item--top" style="width: 205px; height: 335px;">
+                            <div class="timeline__item__inner">
+                                <div class="timeline__content__wrap">
+                                    <div class="timeline__content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis elit id
+                                            nisi ullamcorper
+                                            fringilla. Nam ornare congue convallis. Phasellus tempus ante quis neque
+                                            placerat, eu
+                                            vestibulum
+                                            ligula.
+                                        </p>
+                                        <img src="./img/EP19_UNFROST_FLOWER 1.png" alt="EP19_UNFROST_FLOWER 1.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline__item timeline__item--bottom"
+                            style="width: 205px; height: 335px; transform: translateY(335px);">
+                            <div class="timeline__item__inner">
+                                <div class="timeline__content__wrap">
+                                    <div class="timeline__content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis elit id
+                                            nisi ullamcorper
+                                            fringilla. Nam ornare congue convallis. Phasellus tempus ante quis neque
+                                            placerat, eu
+                                            vestibulum
+                                            ligula.
+                                        </p>
+                                        <img src="./img/EP19_UNFROST_FLOWER 1.png" alt="EP19_UNFROST_FLOWER 1.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="timeline-nav-button timeline-nav-button--prev" disabled=""
+                    style="top: 335px;">Previous</button>
+                <button class="timeline-nav-button timeline-nav-button--next" style="top: 335px;">Next</button>
+                <span class="timeline-divider" style="top: 335px;"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- criar conta -->
+    <div class="criarContaBG">
+        <span>PRONTO PARA COMEÇAR?</span>
+        <a href="#">
+            <p>Criar a conta!</p>
+        </a>
+    </div>
+    <!-- informacoes -->
+    <div class="informacoesBG">
+        <div class="informacoesBox">
+            <div class="informacoes_p">
+                <span>INFORMAÇÕES DO SERVIDOR</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis elit id nisi ullamcorper
+                    fringilla. Nam
+                    ornare congue convallis. Phasellus tempus ante quis neque placerat, eu vestibulum ligula efficitur.
+                    Praesent
+                    sed laoreet risus, id vulputate felis.</p>
+            </div>
+            <div class="informacoesLista">
+                <ul>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                </ul>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                </ul>
+                <img src="./img/chibi-aboutus.png" alt="chibi-aboutus.png">
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footerBG">
+        <div class="footerBarra"></div>
+        <div class="footerBox">
+            <img src="./img/btn-gototop 1.png" alt="btn-gototop 1.png">
+            <div class="box">
+                <span>About Us</span>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in vehicula massa, sit amet ultricies
+                    erat. Nulla luctus pharetra lectus quis sodales. Donec quis nulla risus. Vestibulum at euismod
+                    mauris, at pellentesque erat nisi.
+                </p>
+            </div>
+            <div class="box">
+                <span>Rules</span>
+                <p>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                </ul>
+                </p>
+            </div>
+            <div class="box">
+                <span>Links</span>
+                <p>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Information</a></li>
+                    <li><a href="#">Downloads</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Forum</a></li>
+                </ul>
+                </p>
+            </div>
+        </div>
+        <div class="footerAllrights">
+            <p>2023 © All rights reserved.</p>
+            <img src="./img/logo-rbs.png" alt="logo-rbs.png">
+        </div>
+    </div>
+    <!-- scroll efect on header -->
+    <script>
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("stick", window.scrollY > 0);
+        })
+    </script>
+    <!-- slidebar script -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#dismiss, .overlay').on('click', function () {
+                $('#sidebar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://squarechip.github.io/timeline/js/timeline.min.js"></script>
+    <script src="https://squarechip.github.io/timeline/js/prettify.min.js"></script>
+    <script src="https://squarechip.github.io/timeline/js/main.min.js"></script>
+    <script async="" defer="" src="https://buttons.github.io/buttons.js"></script>
+    <script>
+        timeline(document.querySelectorAll('#timeline-horizontal'), {
+            forceVerticalMode: 800,
+            mode: 'horizontal',
+            visibleItems: 3
+        });
+    </script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!-- abas bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

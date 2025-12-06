@@ -1,0 +1,198 @@
+:root {
+    /* Cores. */
+    --branco-01: #fafafa;
+    /* outros. */
+    --widthBox: 1200px;
+}
+
+* {
+    outline: none !important;
+    margin: 0;
+    padding: 0;
+    text-decoration: none !important;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 90% !important;
+    }
+}
+
+@media (max-width: 425px) {
+    body {
+        font-size: 75% !important;
+    }
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)),
+        url(img/bodyBG.png) top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.headerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+}
+
+.headerContainer .headerBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--widthBox);
+}
+
+.headerContainer .headerBox>img {
+    width: 400px;
+    border-radius: 0.4rem;
+}
+
+.headerContainer .headerBox .description {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: #fff;
+}
+
+@media (max-width: 1240px) {
+    .headerContainer .headerBox {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .headerContainer .headerBox {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .headerContainer .headerBox .description {
+        padding: 20px 0 0 0;
+
+    }
+}
+
+@media (max-width: 440px) {
+    .headerContainer .headerBox>img {
+        width: 100%;
+    }
+}
+
+/*===social=====================================================================*/
+.headerContainer .socialBox {
+    display: flex;
+    align-items: center;
+    width: var(--widthBox);
+}
+
+.headerContainer .socialBox .social {
+    margin: 20px 0 0 0;
+}
+
+.headerContainer .socialBox .social img {
+    width: 40px;
+    margin: 0 10px 0 0;
+}
+
+.headerContainer .socialBox .social a {
+    color: #fafafa;
+    margin: 0 30px 0 0;
+}
+
+@media (max-width: 1240px) {
+    .headerContainer .socialBox {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}
+
+/*===workBody================================================================*/
+.workContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.workContainer>h5 {
+    width: 100%;
+    text-align: center;
+    color: #fafafa;
+    margin: 30px 0 20px 0;
+}
+
+.workContainer .workBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--widthBox);
+    padding: 20px;
+    margin: 30px 0 60px 0;
+    flex-wrap: wrap;
+}
+
+.workContainer .workBox .card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 300px;
+    height: 360px;
+    border: solid 1px #7809a3;
+    border-radius: 0.5rem;
+    margin: 20px;
+}
+
+.workContainer .workBox .card>img {
+    width: 298px;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.workContainer .workBox .card>b {
+    margin: 10px 0 5px 0;
+}
+
+.workContainer .workBox .card>p {
+    margin: 5px 10px 10px 10px;
+}
+
+@media (max-width: 1200px) {
+    .workContainer .workBox {
+        width: 100%;
+    }
+}
+
+@media (max-width: 425px) {
+    .workContainer .workBox .card {
+        margin: 20px 0 0 0;
+        height: 300px;
+    }
+
+    .workContainer .workBox .card>img {
+        width: 100%
+    }
+}
+
+/*===footer=================================================================*/
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0 15px 0;
+    border: solid 1px #7809a3;
+    color: #fff;
+}
+
+@media (max-width: 425px) {
+    .footer p{
+        font-size: 10px;
+    }
+}

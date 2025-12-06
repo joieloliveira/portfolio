@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ragnarok</title>
+    <link rel="stylesheet" href="pagina.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css"><link rel="stylesheet" href="assets/owlcarousel/assets/owl.theme.default.min.css">
+
+    <!-- javascript -->
+    <script src="assets/vendors/jquery.min.js"></script>
+    <script src="assets/owlcarousel/owl.carousel.js"></script>
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+        crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Sidebar  -->
+    <nav id="sidebar">
+        <div class="sidebarHeader">
+            <div class="sidebar-header">
+                <img class="imgLogo" src="img/logo.png" alt="logo">
+            </div>
+            <div id="dismiss">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+        </div>
+        <div class="slideBody">
+            <a href="#">INÍCIO</a>
+            <a href="#">INFORMAÇÔES</a>
+            <a href="#">DOWNLOAD</a>
+            <a href="#">REGISTRE-SE</a>
+            <a href="#">FÓRUM</a>
+            <a href="#">LOGIN</a>
+        </div>
+    </nav>
+    <!-- header  -->
+    <div class="haederBox">
+        <div class="buttonSlidebar">
+            <button type="button" id="sidebarCollapse" class="btn btn-info">
+                <i class="fas fa-align-right"></i>
+            </button>
+        </div>
+        <div class="headerButtons">
+            <img class="imgLogo" src="img/logo.png" alt="logo">
+            <a href="#">INÍCIO</a>
+            <a href="#">INFORMAÇÔES</a>
+            <a href="#">DOWNLOAD</a>
+            <a href="#">REGISTRE-SE</a>
+            <a href="#">FÓRUM</a>
+            <a href="#">LOGIN</a>
+        </div>
+        <img class="element" src="img/xl/xl_element.png" alt="xl_element">
+    </div>
+    <div class="Container">
+        <div style="background-color: rgb(156, 190, 160); width: 100%;">
+            ola mundo
+        </div>
+    </div>
+    <!-- slidebar script -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#dismiss, .overlay').on('click', function () {
+                $('#sidebar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!-- abas bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

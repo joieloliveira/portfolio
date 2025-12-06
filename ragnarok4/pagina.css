@@ -1,0 +1,214 @@
+* {
+    outline: none
+}
+/*font-family: "Gadugi Bold";*/
+@font-face {
+    font-family: Gadugi Bold;
+    src: url(fonts/gadugi-bold.ttf);
+}
+.haederBox .headerCarousel .carouselMobile{
+    display: none;
+}
+.haederBox .buttonSlidebar{
+    display: none;
+}
+/*===headerBox*/
+.haederBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background: url(img/xl/xl_bg01.png) top center;
+}
+.haederBox .headerButtons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.haederBox .headerButtons a{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+.haederBox .headerButtons a:hover{
+    color: #00D9D9;
+}
+.haederBox .headerButtons a:nth-child(2){
+    margin-left: 40px;
+}
+.haederBox .headerButtons img{
+    margin-right: 40px;
+}
+.haederBox .headerButtons a:nth-child(7){
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    background-color: #00D9D9;
+    padding: 2px 20px 2px 20px;;
+    border-radius: 0.4rem;
+}
+.haederBox .headerCarousel{
+    width: 100%;
+    margin-top: -20px;
+}
+.haederBox .headerCarousel .carouselDesktopTablet .chibi{
+    margin-left: 41%;
+    width: 680px;
+    height: 500px;
+}
+.haederBox .element{
+    width: 100%;
+    z-index: 1;
+}
+@media(max-width: 1023px){
+    .haederBox .headerButtons a{
+        display: none
+    }
+    .haederBox .headerButtons img{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    .haederBox .headerButtons{
+        margin-top: -30px;
+    }
+    .haederBox .buttonSlidebar{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+        margin: 20px 35px 0 0;
+        z-index: 1;
+    }
+    .imgLogo{
+        width: 180px;
+        height: 50px;
+        margin: 10px;
+        margin-top: 45px;
+    }
+    #sidebar .slideBody{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    #sidebar .slibarFooter{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        margin-top: 50%;
+    }
+    #sidebar .slideBody a{
+        margin: 10px;
+    
+        color: white;
+    }
+    #sidebar .slideBody a:nth-child(6){
+        text-decoration: none;
+        color: white;
+        background-color: #00D9D9;
+        padding: 2px 20px 2px 20px;;
+        border-radius: 0.4rem;
+        width: 85px;
+        margin-left: 15px;
+        margin-bottom: 5px;
+    }
+}
+/*===slidebar config===*/
+
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+.navbar {
+    padding: 15px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+#sidebar {
+    width: 50vw;
+    position: fixed;
+    top: 0;
+    left: -60vw;
+    height: 100vh;
+    z-index: 999;
+    background-image: url(img/md/md_bg01.png);
+    color: #fff;
+    transition: all 0.3s;
+    overflow-y: scroll;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+#sidebar .slideBody a{
+    text-decoration: none;
+}
+#sidebar .slideBody a:hover{
+    color: #00D9D9;
+}
+
+#sidebar.active {
+    left: 0;
+}
+
+#dismiss {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: #7386D5;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#dismiss:hover {
+    background: #fff;
+    color: #7386D5;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 998;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.overlay.active {
+    display: block;
+    opacity: 1;
+}
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+}

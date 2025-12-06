@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ragnarok</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/owlcarousel/assets/owl.theme.default.min.css">
+
+    <!-- javascript -->
+    <script src="assets/vendors/jquery.min.js"></script>
+    <script src="assets/owlcarousel/owl.carousel.js"></script>
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Sidebar  -->
+    <nav id="sidebar">
+        <div class="sidebarHeader">
+            <div class="sidebar-header">
+                <img class="imgLogo" src="img/logo.png" alt="logo">
+            </div>
+            <div id="dismiss">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+        </div>
+        <div class="slideBody">
+            <a href="#">INÍCIO</a>
+            <a href="#">INFORMAÇÔES</a>
+            <a href="#">DOWNLOAD</a>
+            <a href="#">REGISTRE-SE</a>
+            <a href="#">FÓRUM</a>
+            <a href="#">LOGIN</a>
+        </div>
+    </nav>
+    <!-- header  -->
+    <div class="haederBox">
+        <div class="buttonSlidebar">
+            <button type="button" id="sidebarCollapse" class="btn btn-info">
+                <i class="fas fa-align-right"></i>
+            </button>
+        </div>
+        <div class="headerButtons">
+            <img class="imgLogo" src="img/logo.png" alt="logo">
+            <a href="#">INÍCIO</a>
+            <a href="#">INFORMAÇÔES</a>
+            <a href="#">DOWNLOAD</a>
+            <a href="#">REGISTRE-SE</a>
+            <a href="#">FÓRUM</a>
+            <a href="#">LOGIN</a>
+        </div>
+        <div class="headerCarousel">
+            <!-- The slideshow desktop tablet-->
+            <div id="controle" class="carouselDesktopTablet carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active carrosselSlid">
+                        <img class="chibi" src="img/xl/xl-md_chibi.png" alt="xl-md_chibi">
+                    </div>
+                    <div class="carousel-item carrosselSlid">
+                        <img class="chibi" src="img/xl/xl-md_chibi2.png" alt="xl-md_chibi">
+                    </div>
+                    <div class="carousel-item carrosselSlid">
+                        <img class="chibi" src="img/xl/xl-md_chibi3.png" alt="xl-md_chibi">
+                    </div>
+                </div>
+            </div>
+            <!-- The slideshow mobile-->
+            <div id="controle" class="carouselMobile carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active carrosselSlid">
+                        <img class="chibiM" src="img/xs/xl_chibi.png" alt="xl-md_chibi">
+                    </div>
+                    <div class="carousel-item carrosselSlid">
+                        <img class="chibiM" src="img/xs/xl_chibi.png" alt="xl-md_chibi">
+                    </div>
+                    <div class="carousel-item carrosselSlid">
+                        <img class="chibiM" src="img/xs/xl_chibi.png" alt="xl-md_chibi">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img class="element" src="img/xl/xl_element.png" alt="xl_element">
+    </div>
+    <!--painel Crud-->
+    <div class="painel">
+        <div class="painelCrud">
+            <p>PAINEL DE CONTROLE</p>
+            <p>ACESSE SUA CONTA</p>
+            </form>
+            <input class="inputText" type="text" name="Usuário" placeholder="Usuário" />
+            <input class="inputText" type="text" name="Senha" placeholder="Senha" />
+            <button class="buton" type="submit">LOGIN</button>
+            </form>
+            <button class="buton" type="submit">REGISTRAR</button>
+            <a href="#">ESQUECEU SUA SENHA</a>
+        </div>
+        <div class="boxStatus">
+            <div class="painelStatus">
+                <img class="castle" src="img/icons/castle.png" alt="castle">
+                <p>STATUS DO </p>
+                <p>SERVIDOR</p>
+                <p class="on">ON</p>
+            </div>
+            <div class="painelStatus">
+                <img class="castle" src="img/icons/viking.png" alt="viking">
+                <p>JOGADORES</p>
+                <p>ONLINE</p>
+                <p>9999</p>
+            </div>
+            <div class="painelStatus">
+                <img class="castle" src="img/icons/viking2.png" alt="viking_W">
+                <p>PICO DE</p>
+                <p>JOGADORES</p>
+                <p>9999</p>
+            </div>
+        </div>
+    </div>
+    <!--sobre-->
+    <div class="sobre">
+        <div class="sobreImg">
+            <img class="chibi_01" src="img/chibi_01.png" alt="chibi_01">
+        </div>
+        <div class="sobreServidor">
+            <div class="sobreServidorTxt">
+                <P>SOBRE O SERVIDOR</P>
+                <P>egy egyszerû szövegrészlete, szövegutánzata a betûszedõ és nyomdaiparnak. A Lorem
+                    Ipsum az
+                    1500-as évek óta standard szövegrészletként szolgált az iparban; mikor egy
+                    ismeretlen
+                    nyomdász
+                    összeállította a betûkészletét és egy példa</P>
+            </div>
+            <div class="sobreServidorLinks">
+                <div class="sobreServidorLink">
+                    <div class="sobreServidorLinkImg">
+                        <img class="cloud" src="img/icons/cloud.png" alt="cloud">
+                    </div>
+                    <div class="sobreServidorLinkTxt">
+                        <p>DOWNLOAD</p>
+                        <P>egy egysz szövegr</P>
+                    </div>
+                </div>
+                <div class="sobreServidorLink">
+                    <div class="sobreServidorLinkImg">
+                        <img class="vote" src="img/icons/vote.png" alt="vote">
+                    </div>
+                    <div class="sobreServidorLinkTxt">
+                        <p>VOTE</p>
+                        <P>egy egysz szövegr</P>
+                    </div>
+                </div>
+                <div class="sobreServidorLink" id="sobreDisableMobile">
+                    <div class="sobreServidorLinkImg">
+                        <img class="calendar" src="img/icons/calendar.png" alt="calendar">
+                    </div>
+                    <div class="sobreServidorLinkTxt">
+                        <p>EVENTOS</p>
+                        <P>egy egysz szövegr</P>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- noticiasGuerra -->
+    <div class="noticiaGuerra">
+        <div class="noticiasBox">
+            <div class="noticias" role="tabpanel">
+                <div class="noticiasP1">
+                    <P>ÚLTIMAS NOTÍCIAS</P>
+                </div>
+                <!-- Tab panes abas-->
+                <div class="noticiasA list-group" id="myList" role="tablist">
+                    <a class=" list-group-item-action active" data-bs-toggle="list" href="#TODOS" role="tab">TODOS</a>
+                    <a class=" list-group-item-action" data-bs-toggle="list" href="#NOVIDADES" role="tab">NOVIDADES</a>
+                    <a class=" list-group-item-action" data-bs-toggle="list" href="#ATUALIZAÇÕES"
+                        role="tab">ATUALIZAÇÕES</a>
+                    <a class=" list-group-item-action" data-bs-toggle="list" href="#EVENTOS" role="tab">EVENTOS</a>
+                </div>
+                <div class="noticiasP3 tab-content">
+                    <div class="noticiasBoxP tab-pane active fadeOut" id="TODOS" role="tabpanel">
+                        <div class="noticiasBoxP1">
+                            <img class="screnn" src="img/news/att01.png">
+                            <P><strong>EVENTO DE NATAL</strong></P>
+                            <p>11är en utfyllnadstext från förlagsindustrin.</p>
+                        </div>
+                        <div class="noticiasBoxP1">
+                            <img class="screnn" src="img/news/att02.png">
+                            <P><strong>EVENTO DE NATAL</strong></P>
+                            <p>11är en utfyllnadstext från förlagsindustrin.</p>
+                        </div>
+                    </div>
+                    <div class="noticiasBoxP tab-pane fade" id="NOVIDADES" role="tabpanel">
+                        <div class="noticiasBoxP1">
+                            <img class="screnn" src="img/news/evt01.png">
+                            <P><strong>EVENTO DE NATAL</strong></P>
+                            <p>22är en utfyllnadstext från förlagsindustrin.</p>
+                        </div>
+                        <div class="noticiasBoxP1">
+                            <img class="screnn" src="img/news/evt02.png">
+                            <P><strong>EVENTO DE NATAL</strong></P>
+                            <p>22är en utfyllnadstext från förlagsindustrin.</p>
+                        </div>
+                    </div>
+                    <div class="noticiasBoxP tab-pane fade" id="ATUALIZAÇÕES" role="tabpanel">
+                        <div class="noticiasBoxP1">
+                            <img class="screnn" src="img/news/new01.png">
+                            <P><strong>EVENTO DE NATAL</strong></P>
+                            <p>33är en utfyllnadstext från förlagsindustrin.</p>
+                        </div>
+                        <div class="noticiasBoxP1">
+                            <img class="screnn" src="img/news/new02.png">
+                            <P><strong>EVENTO DE NATAL</strong></P>
+                            <p>33är en utfyllnadstext från förlagsindustrin.</p>
+                        </div>
+                    </div>
+                    <div class="noticiasBoxP tab-pane fade" id="EVENTOS" role="tabpanel">
+                        <div class="noticiasBoxP1">
+                            <img class="screnn" src="img/news/att02.png">
+                            <P><strong>EVENTO DE NATAL</strong></P>
+                            <p>44är en utfyllnadstext från förlagsindustrin.</p>
+                        </div>
+                        <div class="noticiasBoxP1">
+                            <img class="screnn" src="img/news/new02.png">
+                            <P><strong>EVENTO DE NATAL</strong></P>
+                            <p>44är en utfyllnadstext från förlagsindustrin.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="guerra">
+            <div class="guerraBox">
+                <div class="guerraP1">
+                    <p>PRÓXIMA GUERRA DO EMPERIUM EM:</p>
+                </div>
+                <div class="guerraP2">
+                    <div class="guerraP2Box">
+                        <p>Quarta-feira</p>
+                        <p>21:00 - 22:00 h.</p>
+                        <img class="guild01" src="img/guild01.png" alt="guild01">
+                        <p>egysz</p>
+                        <p>EPIC ONES</p>
+                    </div>
+                    <div class="guerraP2Box">
+                        <p>Domingo</p>
+                        <p>22:00 - 00:00 h.</p>
+                        <img class="guild02" src="img/guild02.png" alt="guild02">
+                        <p>egysz</p>
+                        <p>EPIC ONES</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ranking -->
+    <div class="ranking">
+        <div class="rankingPvpWoe">
+            <div class="rankingBox1">
+                <p>JOGADOR VS JOGADOR</p>
+                <P>(PVP)</P>
+            </div>
+            <div class="rankingPvpWoeBox2">
+                <div class="rankingPvpWoeBox2Char">
+                    <img class="charWoe" src="img/charPvp.png" alt="charPvp">
+                </div>
+                <div class="rankingPvpWoeBox2Icon">
+                    <div class="rankingPvpWoeBox2Icon2">
+                        <div class="rankingPvpWoeBox2IconIcon">
+                            <img class="shield" src="img/icons/shield.png" alt="shield">
+                        </div>
+                        <div class="rankingPvpWoeBox2IconTxt">
+                            <p>Nome:</p>
+                            <p>lorenlorenlorenenlorenloren</p>
+                        </div>
+                    </div>
+                    <div class="rankingPvpWoeBox2Icon2">
+                        <div class="rankingPvpWoeBox2IconIcon">
+                            <img class="shield" src="img/icons/slash.png" alt="slash">
+                        </div>
+                        <div class="rankingPvpWoeBox2IconTxt">
+                            <p>Eliminação:</p>
+                            <p>256</p>
+                        </div>
+                    </div>
+                    <div class="rankingPvpWoeBox2Icon2">
+                        <div class="rankingPvpWoeBox2IconIcon">
+                            <img class="shield" src="img/icons/gravestone.png" alt="gravestone">
+                        </div>
+                        <div class="rankingPvpWoeBox2IconTxt">
+                            <p>Mortes:</p>
+                            <p>10</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rankingPvpWoe">
+            <div class="rankingBox1">
+                <p>GUERRA DO EMPERIUM</p>
+                <P>(WOE)</P>
+            </div>
+            <div class="rankingPvpWoeBox2">
+                <div class="rankingPvpWoeBox2Char">
+                    <img class="charWoe" src="img/charWoe.png" alt="charWoe">
+                </div>
+                <div class="rankingPvpWoeBox2Icon">
+                    <div class="rankingPvpWoeBox2Icon">
+                        <div class="rankingPvpWoeBox2Icon2">
+                            <div class="rankingPvpWoeBox2IconIcon">
+                                <img class="shield" src="img/icons/shield.png" alt="shield">
+                            </div>
+                            <div class="rankingPvpWoeBox2IconTxt">
+                                <p>Nome:</p>
+                                <p>LOREN</p>
+                            </div>
+                        </div>
+                        <div class="rankingPvpWoeBox2Icon2">
+                            <div class="rankingPvpWoeBox2IconIcon">
+                                <img class="shield" src="img/icons/slash.png" alt="slash">
+                            </div>
+                            <div class="rankingPvpWoeBox2IconTxt">
+                                <p>Eliminação:</p>
+                                <p>256</p>
+                            </div>
+                        </div>
+                        <div class="rankingPvpWoeBox2Icon2">
+                            <div class="rankingPvpWoeBox2IconIcon">
+                                <img class="shield" src="img/icons/gravestone.png" alt="gravestone">
+                            </div>
+                            <div class="rankingPvpWoeBox2IconTxt">
+                                <p>Mortes:</p>
+                                <p>10</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rankingImg">
+            <p>RANKING</p>
+            <img class="chibi_02" src="img/chibi_02.png" alt="chibi_02">
+        </div>
+    </div>
+    <!-- carrossel -->
+    <div class="carrossel owl-carousel">
+        <div class="carrosselItem">
+            <img class="carrosseImg" src="img/news/screen01.png">
+        </div>
+        <div class="carrosselItem">
+            <img class="carrosseImg" src="img/news/screen02.png">
+        </div>
+        <div class="carrosselItem">
+            <img class="carrosseImg" src="img/news/screen03.png">
+        </div>
+        <div class="carrosselItem">
+            <img class="carrosseImg" src="img/news/screen04.png">
+        </div>
+        <div class="carrosselItem">
+            <img class="carrosseImg" src="img/news/screen05.png">
+        </div>
+        <div class="carrosselItem">
+            <img class="carrosseImg" src="img/news/screen06.png">
+        </div>
+        <div class="carrosselItem">
+            <img class="carrosseImg" src="img/news/screen07.png">
+        </div>
+        <div class="carrosselItem">
+            <img class="carrosseImg" src="img/news/screen08.png">
+        </div>
+    </div>
+    <!-- footerBox -->
+
+    <div class="footer">
+        <div class="footerBox1">
+            <img src="img/chibi_03.png" class="footer_rbs">
+            <div class="coll3">
+                <div class="navigationLinks">
+                    <div class="navigation">
+                        <p style="color: rgb(0, 162, 255);"><strong>NAVIGATION</strong></p>
+                        <a href="#" style="padding-left: 8px;">> Home</a>
+                        <a href="#" style="padding-left: 8px;">> Registration</a>
+                        <a href="#" style="padding-left: 8px;">> Downloads</a>
+                        <a href="#" style="padding-left: 8px;">> Informações</a>
+                        <a href="#" style="padding-left: 8px;">> Rankings</a>
+                        <a href="#" style="padding-left: 8px;">> Fórum</a>
+                    </div>
+                    <div class="Links">
+                        <p style="color: rgb(0, 162, 255);"><strong>SOCIAL LINKS</strong></p>
+                        <a href="#" style="padding-left: 8px;">> Facebook</a>
+                    </div>
+                </div>
+                <div class="facebook">
+                    <p style="color: rgb(0, 162, 255);"><strong>FACEBOOK</strong></p>
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fragnarokbrasilservice&tabs&width=300&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="300" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="footerBox2">
+            <div class="footerBox2Logo">
+                <img src="img/footer_rbs.png" class="footer_rbs">
+            </div>
+            <div class="footerBox2txt">
+                <p>Copyright © 2020</p>
+                <p>Todos os direitos reservados aos respectivos </p>
+                <p>administradores e a Gravity Co.LTD</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- carousel owl -->
+    <script>
+        $(document).ready(function () {
+            var owl = $('.owl-carousel');
+            owl.owlCarousel({
+                items: 6,
+                loop: true,
+                margin: 0,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true
+            });
+        })
+    </script>
+    <!-- slidebar script -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#dismiss, .overlay').on('click', function () {
+                $('#sidebar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!-- abas bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
